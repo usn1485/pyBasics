@@ -17,3 +17,9 @@ def multiply(*args):
     return total
 
 print(multiply(4,6,8,6))
+
+
+#Unpacking Key values from a dictionary
+
+
+
