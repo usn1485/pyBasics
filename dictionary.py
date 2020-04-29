@@ -15,6 +15,18 @@ d_dict = dict([("school", "XYZ"), ("Fam_members", 3), ("wanna_be", 'Engineer')])
 e_dict = dict({'Age': 10, 'name': "Katie", 'Grade': 5})
 print(e_dict["name"])
 
+# Adding more key value pairs to exisitng Dictionary
+e_dict["fav_color"] = "Blue"
+print(e_dict)
+
+# deleting an item from dictionary
+del e_dict["name"]
+print(f'Deleting a key "{e_dict}')
+
+# List all keys of dictionary
+print(f'List of keys :{list(e_dict)}')
+
+
 # a = dict(one=1, two=2, three=3)
 # >>> b = {'one': 1, 'two': 2, 'three': 3}
 # >>> c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
