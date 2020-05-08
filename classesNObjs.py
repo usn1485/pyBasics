@@ -10,15 +10,19 @@ class Store:
         item = {'name': name, 'price': price}
         self.items.append(item)
 
+    @property
     def stock_price(self):
-        total=0
+        # total=0
         # Add together all item prices in self.items and return the total.
-        for item in self.items:
-            total += item['price']
-        return total
+        # for item in self.items:
+        #     total += item['price']
+        # return total
+        # List Comprehension
+        return sum(item['price'] for item in self.items)
 
-store=Store("Walmart")
-store.add_item('milk',3)
-store.add_item('bread',5)
-store.add_item('cheese',10)
-print(store.stock_price())
+
+store = Store("Walmart")
+store.add_item('milk', 3)
+store.add_item('bread', 5)
+store.add_item('cheese', 10)
+print(store.stock_price)
